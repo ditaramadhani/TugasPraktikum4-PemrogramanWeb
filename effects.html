@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//Script JQuery untuk menghilangkan kotak yang berisi tulisan dalam waktu 3 detik setelah ditampilkan
+		$(document).ready(function(){
+			setTimeout(function(){
+				$("#kotak").fadeOut("slow",function(){
+					$("#kotak").remove();
+				})
+			},3000);
+		});
+	</script>
+
+	<!--Script CSS untuk mengubah format warna dan warna latar belakang-->
+	<style type="text/css">
+		#kotak{
+			width: 300px;
+			height: 70px;
+			background: lightyellow;
+			border: 1px solid black;
+			padding: 5px;
+		}
+	</style>
+</head>
+<body>
+	<!--menampilkan tulisan di dalam kotak yang akan hilang dalam waktu 3 detik-->
+	<h3 id="kotak">Perhatikan baik-baik teks ini, karena teks akan hilang dalam hitungan 3 detik</h3>
+</body>
+</html>

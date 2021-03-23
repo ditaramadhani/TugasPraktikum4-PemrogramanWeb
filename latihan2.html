@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//Script JQuery untuk mengubah warna box setelah mengklik 2 kali
+		$(document).ready(function(){
+			$("div").dblclick(function(){
+				$(this).css({background:"red"});
+			});
+		});
+	</script>
+
+	<!--Script CSS untuk merapikan tabel dan gambar-->
+	<style type="text/css">
+		div{
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+			float: left;
+			margin: 15px;
+		}
+
+		p{
+			padding-left: 75px;
+		}
+	</style>
+</head>
+<body>
+	<!--menampilkan teks dan 4 kotak yang akan berubah warna setelah diklik-->
+	<p> Klik 2x pada setiap kotak untuk mengubah warnanya </p>
+	<div></div>
+	<div></div>
+	<div></div>
+	<div></div>
+</body>
+</html>

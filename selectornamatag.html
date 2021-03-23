@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//script Jquery yaitu selector nama tag
+		$(document).ready(function(){
+			$("div").addClass("biru");
+		});
+	</script>
+	<!--Script CSS untuk mengubah format warna dan tebal tulisan-->
+	<style type="text/css">
+		.biru{
+			color: blue;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<!--tag div sebagai selector-->
+	<div>
+		<p>Paragraf Pertama</p>
+	</div>
+	<div>
+		<ul>
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+		</ul>
+	</div>
+</body>
+</html>

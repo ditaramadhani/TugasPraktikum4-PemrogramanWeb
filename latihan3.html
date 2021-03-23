@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//Script JQuery untuk menampilkan, menghilangkan, dan fade in 0,3s persegi
+		$(document).ready(function(){
+			$("#fadeout").click(function(){
+				$("#box").fadeOut("slow");
+			});
+			$("#fadein").click(function(){
+				$("#box").fadeIn("slow");
+			});
+			$("#fadeout1").click(function(){
+				$("#box").fadeTo("slow", 0.3);
+			});
+		});
+	</script>
+
+	<!--Script CSS untuk membuat persegi-->
+	<style type="text/css">
+		#box{
+			width: 300px;
+			height: 250px;
+			background: yellow;
+			border: 1px solid black;
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<!--menampilkan persegi dan button-->
+	<div id="box"></div>
+	<button id="fadeout"> Fade Out </button>
+	<button id="fadein"> Fade In </button>
+	<button id="fadeout1"> Fade To 0.3 </button>
+</body>
+</html>

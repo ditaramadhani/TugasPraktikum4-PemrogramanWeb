@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//Script JQuery sebagai selector id
+		$(document).ready(function(){
+			$("#daftar").addClass("merahkuning");
+			$(".subdaftar").addClass("kuninghitam");
+		});
+	</script>
+
+	<!--Script CSS untuk mengubah format warna dan warna latar belakang-->
+	<style type="text/css">
+		.merahkuning{
+			color: red
+			font-weight : bold;
+			background-color: yellow;
+			padding: 3px;
+		}
+		.kuninghitam{
+			color: blue;
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<!--id sebagai selector yang lebih spesifik-->
+	<ul id="daftar">
+		<li>Item 1</li>
+		<!--class sebagai selector yang lebih spesifik-->
+		<li class="subdaftar">Item 2</li>
+		<li>Item 3</li>
+	</ul>
+</body>
+</html>

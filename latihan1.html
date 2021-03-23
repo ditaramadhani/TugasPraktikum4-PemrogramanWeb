@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--tag sebagai identifier yaitu script yang digunakan adalah script JQuery-->
+	<script src="jquery-3.6.0.min.js"></script>
+	<script type="text/javascript">
+		//Script JQuery untuk menampilkan dan menyembunyikan gambar
+		$(document).ready(function(){
+			$(".sembunyi").click(function(){
+				$("#foto").hide("slow") });
+			$(".tampil").click(function(){
+				$("#foto").show("slow") });
+			$(".sembunyi1").click(function(){
+				$("#foto1").hide("slow") });
+			$(".tampil1").click(function(){
+				$("#foto1").show("slow") });
+		});
+	</script>
+
+	<!--Script CSS untuk merapikan tabel dan gambar-->
+	<style type="text/css">
+		tr{
+			text-align: center;
+		}
+		img{
+			float: left;
+			padding-right: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!--tag pembuat tabel-->
+	<table>
+		<!--tag untuk memunculkan tombol-->
+		<tr>
+			<td> <button class="sembunyi"> Sembunyikan Foto 1 </button> </td>
+			<td> <button class="tampil"> Tampilkan Foto 1 </button></td>
+		</tr>
+		<tr>
+			<td> <button class="sembunyi1"> Sembunyikan Foto 2 </button> </td>
+			<td> <button class="tampil1"> Tampilkan Foto 2 </button></td>
+		</tr>
+
+		<!--tag untuk memunculkan gambar-->
+		<tr>
+			<td> <p><img id="foto" src="xampp.png" width="350px" height="350px"></p> </td>
+			<td> <p><img id="foto1" src="ST3.png" width="350px" height="350px"></p> </td>
+		</tr>
+	</table>
+</body>
+</html>
+
